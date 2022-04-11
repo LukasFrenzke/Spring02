@@ -14,7 +14,7 @@ import org.springframework.web.server.ResponseStatusException;
 public class Paths {
     @RequestMapping("/doctor/{incarnationNumber}")
     @ResponseBody
-	public Map<String, String> hello(@PathVariable int incarnationNumber) {
+	public Map<String, String> paths(@PathVariable int incarnationNumber) {
         if (incarnationNumber >=9 && incarnationNumber <= 13){
             if (incarnationNumber == 9){
                 Map<String, String> map = new HashMap<String, String>();
